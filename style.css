@@ -4,13 +4,19 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     font-family: 'agency fb';
-    background: url('Untitled-1.png') no-repeat center center fixed;
+    background: url('kunal.png') no-repeat center center fixed;
     background-position: 50%;
     background-size: cover;
-    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* width: 0; */
 }
 
 ul {
@@ -224,13 +230,13 @@ p {
 }
 
 .circle1 {
-    top: 120px;
-    left: 80px;
+    top: 140px;
+    left: 90px;
 }
 
 .circle2 {
-    bottom: 150px;
-    right: 59px;
+    bottom: 180px;
+    right: 69px;
 }
 
 .circle1::before,
@@ -283,11 +289,13 @@ p {
 }
 
 .circle1 span {
-    left: 75px;
+    left: -5px;
+    top: 75px;
 }
 
 .circle2 span {
-    left: -68px;
+    top: -32px;
+    left: -1px;
 }
 
 .overlay {
@@ -311,4 +319,145 @@ p {
 .overlay span {
     font-size: 30px;
     letter-spacing: 3px;
+}
+
+@media all and (max-width: 1230px) {
+    .text {
+        top: 15%;
+    }
+
+    .text .title {
+        font-size: 120px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .watchnow {
+        top: 78%;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .text {
+        top: 12%;
+        right: 15px;
+    }
+
+    .circle1 {
+        top: 180px;
+        left: 120px;
+    }
+}
+
+@media all and (max-width: 773px) {
+    .circle1 {
+        top: 180px;
+        left: 480px;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .text {
+        top: 12%;
+        right: 50px;
+    }
+
+    .text .title {
+        font-size: 100px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .watchnow {
+        top: 78%;
+        right: 0;
+        padding: 20px 140px 27px 30px;
+    }
+    
+    .watchnow a {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 3px;
+    }
+    
+    .circle2 {
+        bottom: 200px;
+        right: 80px;
+    }
+}
+
+
+@media all and (max-width: 590px) {
+    .text {
+        top: 10%;
+        right: 50px;
+    }
+    
+    .text .title {
+        font-size: 70px;
+    }
+    
+    p {
+        font-size: medium;
+    }
+
+    .watchnow {
+        top: 82%;
+        right: 0;
+        padding: 20px 100px 27px 30px;
+    }
+    
+    .watchnow a {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 3px;
+    }
+
+    .media {
+        bottom: 0;
+        right: 0;
+        padding: 9px;
+    }
+
+    .nav {
+        width: 150px;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 2;
+    }
+    
+    .logo span {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .circle1 {
+        top: 160px;
+        right: 90px;
+    }
+    
+    .circle2 {
+        bottom: 160px;
+        right: 90px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .circle1 {
+        top: 180px;
+        left: 450px;
+    }
+
+    .nav {
+        width: 145px;
+        /* height: 100vh; */
+    }
 }
