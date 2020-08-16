@@ -461,3 +461,10 @@ p {
         /* height: 100vh; */
     }
 }
+
+@media all and (max-width: 546px) {
+    .overlay h1 {
+        font-size: 80px;
+        letter-spacing: 18px;
+    }
+}
